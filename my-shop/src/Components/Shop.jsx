@@ -1,4 +1,4 @@
-
+import "../Components/shop.css";
 function Shop(){ 
 
     const products =[
@@ -22,7 +22,46 @@ function Shop(){
         price: 520.00, 
         inStock: true,
         image:"https://thfvnext.bing.com/th/id/OIP.NkJG0qH5uME5sZ2JIsBtQAHaHa?w=182&h=182&c=7&r=0&o=7&cb=thfvnextfalcon4&pid=1.7&rm=3"
+    }, 
+    {
+        id:3, 
+        name: "Bluetooth Speakers",
+        price: 520.00, 
+        inStock: true,
+        image:"https://thfvnext.bing.com/th/id/OIP.NkJG0qH5uME5sZ2JIsBtQAHaHa?w=182&h=182&c=7&r=0&o=7&cb=thfvnextfalcon4&pid=1.7&rm=3"
+    }, 
+    {
+        id:3, 
+        name: "Bluetooth Speakers",
+        price: 520.00, 
+        inStock: true,
+        image:"https://thfvnext.bing.com/th/id/OIP.NkJG0qH5uME5sZ2JIsBtQAHaHa?w=182&h=182&c=7&r=0&o=7&cb=thfvnextfalcon4&pid=1.7&rm=3"
     }
+, 
+    {
+        id:3, 
+        name: "Bluetooth Speakers",
+        price: 520.00, 
+        inStock: true,
+        image:"https://thfvnext.bing.com/th/id/OIP.NkJG0qH5uME5sZ2JIsBtQAHaHa?w=182&h=182&c=7&r=0&o=7&cb=thfvnextfalcon4&pid=1.7&rm=3"
+    }
+, 
+    {
+        id:3, 
+        name: "Bluetooth Speakers",
+        price: 520.00, 
+        inStock: true,
+        image:"https://thfvnext.bing.com/th/id/OIP.NkJG0qH5uME5sZ2JIsBtQAHaHa?w=182&h=182&c=7&r=0&o=7&cb=thfvnextfalcon4&pid=1.7&rm=3"
+    }
+, 
+    {
+        id:3, 
+        name: "Bluetooth Speakers",
+        price: 520.00, 
+        inStock: true,
+        image:"https://thfvnext.bing.com/th/id/OIP.NkJG0qH5uME5sZ2JIsBtQAHaHa?w=182&h=182&c=7&r=0&o=7&cb=thfvnextfalcon4&pid=1.7&rm=3"
+    }
+
 
     ]; 
 
@@ -34,12 +73,15 @@ function Shop(){
         return(
             <>
             <div>
-                <img src={products.image} alt={products.name} loading="lazy" />
-                <h1>{products.name}</h1>
-                <p>{products.price.toLocaleString()}</p>
-                <p>{products.inStock ? "In Stock" : "Out Of Stock"}</p>
-                <button>{products.inStock ? "Add to Cart" : "Not Available"}</button>
+                <div className="item-card">
+                    <img src={products.image} alt={products.name} loading="lazy" className="product-image"/>
+                    <h3>{products.name}</h3>
+                    <p>${products.price.toLocaleString()}</p>
+                    <p style={{color : products.inStock ? "green" : "red"}}>{products.inStock ? "In Stock" : "Out Of Stock"}</p>
+                    <button>{products.inStock ? "Add to Cart" : "Not Available"}</button>
+                </div>
             </div>
+         
                  
             </>
            
@@ -59,7 +101,7 @@ function Shop(){
 
     return(
         <>
-            <div>
+            <div className="item-area">
                 {products.map((item)=>(<ProductCard key={item.id} products={item} />))}
             </div>
         
