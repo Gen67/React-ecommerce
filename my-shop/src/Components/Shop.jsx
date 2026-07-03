@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "../Components/shop.css";
 function Shop(){ 
 
@@ -78,7 +79,7 @@ function Shop(){
                     <h3>{products.name}</h3>
                     <p>${products.price.toLocaleString()}</p>
                     <p style={{color : products.inStock ? "green" : "red"}}>{products.inStock ? "In Stock" : "Out Of Stock"}</p>
-                    <button style={{cursor: products.inStock ? "pointer" : "not-allowed"}} type="submit">{products.inStock ? "Add to Cart" : "Not Available"}</button>
+                    <button style={{cursor: products.inStock ? "pointer" : "not-allowed"}} >{products.inStock ? "Add to Cart" : "Not Available"}</button>
                 </div>
             </div>
          
@@ -92,10 +93,13 @@ function Shop(){
     }
 
     function CartSys({products}){ 
+            const [cart, useCart] = useState();
 
-        return(
+
+
+            return(
             <>
-             <div></div>
+
             </>
            
         )
@@ -110,7 +114,7 @@ function Shop(){
     return(
         <>
             <div className="item-area">
-                {products.map((item)=>(<ProductCard key={item.id} products={item} />))}
+                {products.map((item)=>(<ProductCard key={item.id} products={item}/>))}
             </div>
         
         </>
