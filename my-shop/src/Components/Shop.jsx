@@ -77,7 +77,7 @@ function Shop(){
                     <h3>{products.name}</h3>
                     <p>${products.price.toLocaleString()}</p>
                     <p style={{color : products.inStock ? "green" : "red"}}>{products.inStock ? "In Stock" : "Out Of Stock"}</p>
-                    <button style={{cursor: products.inStock ? "pointer" : "not-allowed"}} >{products.inStock ? "Add to Cart" : "Not Available"}</button>
+                    <button style={{cursor: products.inStock ? "pointer" : "not-allowed", backgroundColor: products.inStock ? "rgb(122, 243, 122)" : "rgb(255, 43, 43)" }}className="btn-cart">{products.inStock ? "Add to Cart" : "Not Available"}</button>
                 </div>
             </div>
          

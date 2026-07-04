@@ -1,3 +1,5 @@
+
+
 body{ 
     height: 100vh;
     background-color: rgb(255, 216, 168);
@@ -37,4 +39,17 @@ body{
     border-radius: 5px;
     width: 250px;
     height: 300px;
+}
+
+
+.btn-cart{ 
+    background-color: rgb(255, 30, 30);
+    border: none;
+    border-radius: 5px;
+    height: 25px;
+    transition: 0.5s;
+}
+
+.btn-cart:active{ 
+    transform: scale(0.85);
 }
