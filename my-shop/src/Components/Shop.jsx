@@ -19,50 +19,48 @@ function Shop(){
     }, 
     {
         id:3, 
-        name: "Bluetooth Speakers",
-        price: 520.00, 
+        name: "Mouse Pad",
+        price: 150.00, 
         inStock: true,
-        image:"https://thfvnext.bing.com/th/id/OIP.NkJG0qH5uME5sZ2JIsBtQAHaHa?w=182&h=182&c=7&r=0&o=7&cb=thfvnextfalcon4&pid=1.7&rm=3"
+        image:"https://thf.bing.com/th/id/OIP.qakbN6oAhj4tQw3P2hFkkQHaFs?w=238&h=183&c=7&r=0&o=7&cb=thfc1falcon4&pid=1.7&rm=3"
     }, 
     {
-        id:3, 
-        name: "Bluetooth Speakers",
-        price: 520.00, 
+        id:4, 
+        name: "Mouse",
+        price: 320.00, 
+        inStock: false,
+        image:"https://thf.bing.com/th/id/OIP.mAkxS19YxYV0ueGlHF3GKQHaHa?w=184&h=184&c=7&r=0&o=7&cb=thfc1falcon4&pid=1.7&rm=3"
+    },
+     {
+        id:5, 
+        name: "TridentZ RGB RAM",
+        price: 5900.00, 
+        inStock: false,
+        image:"https://cdn.mos.cms.futurecdn.net/GFukx5y3yrGrBthhPcnBwL.jpg"
+    },
+     {
+        id:6, 
+        name: "AirPods Pro",
+        price: 690.00, 
         inStock: true,
-        image:"https://thfvnext.bing.com/th/id/OIP.NkJG0qH5uME5sZ2JIsBtQAHaHa?w=182&h=182&c=7&r=0&o=7&cb=thfvnextfalcon4&pid=1.7&rm=3"
-    }, 
-    {
-        id:3, 
-        name: "Bluetooth Speakers",
-        price: 520.00, 
+        image:"https://thf.bing.com/th/id/OIP.ewSDH5rjsVX6bM_lanGXogHaE8?w=300&h=200&c=7&r=0&o=7&cb=thfc1falcon4&pid=1.7&rm=3"
+    },
+     {
+        id:7, 
+        name: "Xbox Controler",
+        price: 25000, 
         inStock: true,
-        image:"https://thfvnext.bing.com/th/id/OIP.NkJG0qH5uME5sZ2JIsBtQAHaHa?w=182&h=182&c=7&r=0&o=7&cb=thfvnextfalcon4&pid=1.7&rm=3"
-    }
-, 
-    {
-        id:3, 
-        name: "Bluetooth Speakers",
-        price: 520.00, 
+        image:"https://thf.bing.com/th/id/OIP.uxyXJ1dZzmQHjNqgx8NAJwHaDt?w=340&h=180&c=7&r=0&o=7&cb=thfc1falcon4&pid=1.7&rm=3"
+    },
+     {
+        id:8, 
+        name: "Nintendo Switch",
+        price: 5000.00, 
         inStock: true,
-        image:"https://thfvnext.bing.com/th/id/OIP.NkJG0qH5uME5sZ2JIsBtQAHaHa?w=182&h=182&c=7&r=0&o=7&cb=thfvnextfalcon4&pid=1.7&rm=3"
-    }
-, 
-    {
-        id:3, 
-        name: "Bluetooth Speakers",
-        price: 520.00, 
-        inStock: true,
-        image:"https://thfvnext.bing.com/th/id/OIP.NkJG0qH5uME5sZ2JIsBtQAHaHa?w=182&h=182&c=7&r=0&o=7&cb=thfvnextfalcon4&pid=1.7&rm=3"
-    }
-, 
-    {
-        id:3, 
-        name: "Bluetooth Speakers",
-        price: 520.00, 
-        inStock: true,
-        image:"https://thfvnext.bing.com/th/id/OIP.NkJG0qH5uME5sZ2JIsBtQAHaHa?w=182&h=182&c=7&r=0&o=7&cb=thfvnextfalcon4&pid=1.7&rm=3"
-    }
-
+        image:"https://thf.bing.com/th/id/OIP.CSfNHBumWrxVzW6M_5d9FQHaE8?w=271&h=181&c=7&r=0&o=7&cb=thfc1falcon4&pid=1.7&rm=3"
+    },
+    
+    
 
     ]; 
 
@@ -92,22 +90,7 @@ function Shop(){
         
     }
 
-    function CartSys({products}){ 
-            const [cart, useCart] = useState();
-
-
-
-            return(
-            <>
-
-            </>
-           
-        )
-    }
-
-
-
-
+  
 
 
 
